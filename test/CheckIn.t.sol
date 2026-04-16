@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {Test} from "forge-std/Test.sol";
-import {CheckIn} from "../src/CheckIn.sol";
+import {CheckIn} from "../contracts/CheckIn.sol";
 
 contract CheckInTest is Test {
     CheckIn internal c;

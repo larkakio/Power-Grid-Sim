@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {Script} from "forge-std/Script.sol";
-import {CheckIn} from "../src/CheckIn.sol";
+import {CheckIn} from "../contracts/CheckIn.sol";
 
 contract DeployCheckIn is Script {
     function run() external {

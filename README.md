@@ -1,66 +1,26 @@
+# Power Grid Sim
+
+Foundry smart contracts plus a Next.js mini-app on Base (`web/`). Solidity sources live under **`contracts/`** (Forge `src` directory).
+
+## Contracts
+
+- `contracts/CheckIn.sol` — daily `checkIn()` on Base (no `msg.value`), streak support.
+
 ## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
-
-Foundry consists of:
-
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
 ```shell
-$ forge build
+forge build
+forge test
 ```
 
-### Test
+### Deploy (example)
 
 ```shell
-$ forge test
+forge script script/DeployCheckIn.s.sol:DeployCheckIn --rpc-url $BASE_RPC_URL --broadcast
 ```
 
-### Format
+## Web app
 
-```shell
-$ forge fmt
-```
+See [`web/README.md`](web/README.md). Vercel **Root Directory** = `web`.
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+See [Foundry Book](https://book.getfoundry.sh/) for more.
