@@ -1,0 +1,6 @@
+# Monorepo: UI lives under web/ (TypeScript). Exclude from Linguist so the
+# repo language badge matches Solidity-first projects (contracts/).
+web/** linguist-vendored
+
+# forge-std submodule / libs
+lib/** linguist-vendored
