@@ -16,9 +16,9 @@ const ibm = IBM_Plex_Mono({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://power-grid-sim.local";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://power-grid-sim.vercel.app";
 const baseAppId =
-  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "power-grid-sim-local-dev";
+  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "69e0835f4311569d223694c7";
 
 export const metadata: Metadata = {
   title: "Power Grid Sim",
